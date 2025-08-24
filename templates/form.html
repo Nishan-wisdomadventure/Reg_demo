@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask to Google Sheets</title>
+</head>
+<body>
+    <h2>Enter Student Data</h2>
+    <form action="/submit" method="POST">
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Class:</label><br>
+        <input type="text" name="class" required><br><br>
+
+        <label>Roll:</label><br>
+        <input type="text" name="roll" required><br><br>
+
+        <label>Phone Number 1:</label><br>
+        <input type="text" name="num1" required><br><br>
+
+        <label>Phone Number 2:</label><br>
+        <input type="text" name="num2" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
