@@ -17,7 +17,7 @@ scope = ["https://spreadsheets.google.com/feeds",
 
 creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
 client = gspread.authorize(creds)
-sheet = client.open("MyFlaskSheet").sheet1
+sheet = client.open("Demo_reg").sheet1
 
 
 @app.route("/")
