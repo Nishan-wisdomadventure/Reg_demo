@@ -8,7 +8,12 @@ app = Flask(__name__)
 
 # Load credentials from environment variable
 creds_json = os.environ.get("GOOGLE_CREDS_JSON")
+
+if not creds_json:
+    raise ValueError("Environment variable GOOGLE_CREDS_JSON not set")
+
 creds_dict = json.loads(creds_json)
+
 
 scope = ["https://spreadsheets.google.com/feeds",
          "https://www.googleapis.com/auth/spreadsheets",
